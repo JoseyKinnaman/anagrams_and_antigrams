@@ -4,7 +4,7 @@ require ('a_and_a')
 
 describe("AAA#anagrams") do
   it("checks if two words are anagrams") do
-    words = AAA.new()
-    expect(words.anagrams("tea","eat")).to(eq("These words are anagrams."))
+    words = AAA.new("tea","eat")
+    expect(words.anagrams?).to(eq(true))
   end
 end
