@@ -23,7 +23,7 @@ end
 
 describe("AAA#is_word?") do 
   it("checks if inputs are words") do
-    words = AAA.new("yurb", "Ruby")
-    expect(words.is_word?()).to(eq(true))
+    words = AAA.new("ruby", "Ruby")
+    expect(words.is_word?).to(eq(true))
   end
 end
