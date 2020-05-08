@@ -30,10 +30,10 @@ _No known bugs at this time_
 | :-----|:-----|:-----|
 | The method checks if 2 words are anagrams.| Input: "tea" vs "eat" | Output: "These words are anagrams."|
 | The method accounts for the possibility that words might have different cases but should still be anagrams.| Input: Tea vs Eat | Output: "These words are anagrams."|
-| The method checks if the inputs are words. | Input: "yurb" vs "ruby" | Output: "You need to input actual words!" |
+| The method checks if the inputs are words. | Input: ""brttf" vs "ruby" | Output: "You need to input actual words!" |
 | The method checks if phrases aren't anagrams, then the method should check whether they are actually "antigrams.". | Input: "hi" vs "bye"| Output: "These words have no letter matches and are antigrams."|
 | The program removes all non-characters from a string. | Input: "tea!", "eat." | Output: "tea" vs "eat"|
-| The method will account for multiple words being anagrams or "antigrams.". | Input: "stop, eat, team" | Output: "These words are anagrams." |
+| The method will account for multiple words being anagrams or "antigrams.". | Input: "stop, eat, team", "pots, tea, meat" | Output: "These words are anagrams." |
 
 
 ## Legal

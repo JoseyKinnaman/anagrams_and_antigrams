@@ -16,11 +16,10 @@ class AAA
       "These words are anagrams."
     elsif 
       self.is_antigram?
-      "These words are not anagrams but hey, they are antigrams!"
+      "These words have no letter matches and are antigrams."
     else
       "These words are not anagrams or antigrams...sorry!"
       end
-      binding.pry
     end
   end
 

@@ -24,14 +24,14 @@ end
 
 describe("AAA#is_word?") do 
   it("checks if inputs are words") do
-    words = AAA.new("rbtt", "Ruby")
+    words = AAA.new("brttf", "Ruby")
     expect(words.is_word?).to(eq("You need to input an actual word"))
   end
 end
 
 describe("AAA#is_antigram?") do
   it("checks if inputs aren't anagrams, then the method should check whether they are actually 'antigrams.'") do
-    words = AAA.new("eat", "tea")
-    expect(words.is_antigram?).to(eq(false))
+    words = AAA.new("hi","bye")
+    expect(words.is_antigram?).to(eq(true))
   end
 end
