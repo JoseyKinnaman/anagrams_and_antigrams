@@ -11,6 +11,10 @@ describe("AAA#anagrams") do
     words = AAA.new("Tea","Eat")
     expect(words.anagrams?).to(eq("These words are anagrams."))
   end
+   it("checks for the possibility that input may have multiple words but should still be anagrams.") do
+    words = AAA.new("stop, eat, team")
+    expect(words.anagrams?).to(eq("These words are anagrams."))
+  end
 end
 
 describe("AAA#is_word") do 

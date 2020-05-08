@@ -8,10 +8,10 @@ class AAA
   end
 
    def is_word?
-    # vowels = ["a", "e", "i", "o", "u", "y"]
     first_word = @word1
+    binding.pry
     sec_word = @word2
-    if first_word.count('aeiouy') >= 1 && sec_word.count('aeiouy') >= 2 
+    if first_word.count('aeiouy') >= 1 && sec_word.count('aeiouy') >= 1 
       return true
       binding.pry
     else 
