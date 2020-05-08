@@ -1,10 +1,9 @@
 require ('pry')
 
 class AAA
-  attr_accessor(:word1, :word2)
   def  initialize(word1, word2)
-    @word1 = word1.downcase
-    @word2 = word2.downcase
+    @word1 = word1
+    @word2 = word2
   end
 
    def is_word?
@@ -18,12 +17,14 @@ class AAA
   end
 
   def anagrams?
-   if (word1.chars.sort == word2.chars.sort) 
-     binding.pry
+    choice1 = @word1.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split("").sort
+    choice2 = @word2.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split("").sort
+   if (choice1 == choice2) 
     "These words are anagrams."
-   elsif (word1.chars.sort != word2.chars.sort) 
+   else
     "These words are not anagrams"
     end
+    binding.pry
   end
 
  
