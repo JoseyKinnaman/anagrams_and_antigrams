@@ -24,6 +24,6 @@ end
 describe("AAA#is_word?") do 
   it("checks if inputs are words") do
     words = AAA.new("rbtt", "Ruby")
-    expect(words.is_word?).to(eq(true))
+    expect(words.is_word?).to(eq("You need to input an actual word"))
   end
 end
