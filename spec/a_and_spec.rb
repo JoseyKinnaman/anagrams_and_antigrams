@@ -11,8 +11,11 @@ describe("AAA#anagrams") do
     words = AAA.new("Tea","Eat")
     expect(words.anagrams?).to(eq("These words are anagrams."))
   end
+end
+
+describe("AAA#is_word") do 
   it("checks if inputs are words") do
     words = AAA.new("yurb","ruby")
-    expect(words.anagrams?).to(eq("These words are not anagrams."))
+    expect(words.is_word?).to(eq("You need to input actual words!"))
   end
 end
