@@ -30,7 +30,7 @@ end
 
 describe("AAA#is_antigram?") do
   it("checks if inputs aren't anagrams, then the method should check whether they are actually 'antigrams.'") do
-    words = AAA.new("hi", "bye")
+    words = AAA.new("eat", "tea")
     expect(words.is_antigram?).to(eq(true))
   end
 end

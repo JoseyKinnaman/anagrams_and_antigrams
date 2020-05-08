@@ -34,6 +34,8 @@ class AAA
       false
     else
       true
+    end
+    binding.pry
   end
 end
 
