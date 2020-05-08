@@ -27,6 +27,13 @@ class AAA
   end
 
   def is_antigram?
+    input1 = @word1.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split("").sort
+    input2 = @word2.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split("").sort
+    if
+      input1.any?{|input1| input2.include?(input1)}
+      false
+    else
+      true
   end
 end
 
