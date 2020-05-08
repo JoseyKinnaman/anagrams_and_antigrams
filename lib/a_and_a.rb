@@ -9,10 +9,16 @@ class AAA
   def anagrams?
     choice1 = @word1.split("").sort
     choice2 = @word2.split("").sort
-   if (choice1 == choice2) 
-    "These words are anagrams."
-   else
-    "These words are not anagrams"
+    if 
+    self.is_word?
+    if (choice1 == choice2) 
+      "These words are anagrams."
+    elsif 
+      self.is_antigram?
+      "These words are not anagrams but hey, they are antigrams!"
+    else
+      "These words are not anagrams or antigrams...sorry!"
+      end
     end
   end
 
