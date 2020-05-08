@@ -1,6 +1,7 @@
 require ('rspec')
 require ('pry')
 require ('a_and_a')
+# require ('dictionary', '~> 1.0')
 
 describe("AAA#anagrams") do
   it("checks if two words are anagrams") do
@@ -16,8 +17,8 @@ describe("AAA#anagrams") do
     expect(words.anagrams?).to(eq("These words are anagrams."))
   end
   it("checks for the possibility that input may have multiple words but should still be anagrams.") do
-    words = AAA.new("stop, eat, team", "pots, tea, meat")
-    expect(words.anagrams?).to(eq("These words are anagrams."))
+    words = AAA.new("stop, eat, team", "fun, puppy")
+    expect(words.anagrams?).to(eq("These words are not anagrams or antigrams...sorry!"))
   end
 end
 
