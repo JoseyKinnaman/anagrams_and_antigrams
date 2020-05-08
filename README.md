@@ -1,17 +1,17 @@
-# _Anagrams vs Antigrams
-## _By: Jozy Kinnaman
+# _Anagrams vs Antigrams_
+## _By: Jozy Kinnaman_
 ## Description
 
-_This application will allow the user to enter two words and check if they are an antigram vs anagram. 
+_This application will allow the user to enter two words and check if they are an antigram vs anagram._
 
 ## Setup
 
 
-* _Clone repository from Github: https://github.com/
+* _Clone repository from Github: https://github.com/Jozypants/anagrams_and_antigrams.git_
 * _Open the repository folder in the terminal_
-* _cd into the root directory and bundle the project;
-* _run tests;
-* _run any script files in the root directory.
+* _cd into the root directory and bundle the project_
+* _run tests_
+* _run any script files in the root directory._
 
 ## Known Bugs
 _No known bugs at this time_
@@ -28,18 +28,13 @@ _No known bugs at this time_
 
 |Behavior|Input|Output|
 | :-----|:-----|:-----|
-| Returns a random number.| Input: game begins | Output: a number between 1 and 3 |
-| Returns "rock", "paper", or "scissor" based on random number.| Input: 1 | Output: "rock"|
-| Returns true if rock is the object and sissors is the argument. | Input: "rock", "sissors" | Output: "rock wins"|
-| Returns false if rock is the object and paper is the argument. | Input: "rock", "paper" | Output: "paper wins"|
-| Returns nil? if rock is the object and rock is the argument. | Input: "rock", "rock" | Output: "Tie"|
-| Returns true if sissors is the object and paper is the argument. | Input: "sissors", "paper" | Output: "Sissors Wins" |
-| Returns false if sissors is the object and rock is the argument. | Input: "sissors", "rock" | Output: "rock wins" |
-| Returns true if sissors is the object and paper is the argument. | Input: "sissors", "sissors" | Output: "tie" |
-| Returns true if paper is the object and rock is the argument. | Input:"paper" "rock"| Output: "Paper Wins!" | 
-| Returns false if paper is the object and sissors is the argument. | Input:"paper" "sissors"| Output: "sissors Wins!" | 
-| Returns nil? if paper is the object and paper is the argument. | Input:"paper" "paper"| Output: "tie" | 
-| Returns error if word entered is not "rock" "paper" "scissors". | Input: dog | Output: "Cheater!  Please only use 'rock', 'paper', or 'scissor'!"|
+| The method checks if 2 words are anagrams.| Input: tea vs eat | Output: "These words are anagrams."|
+| The method accounts for the possibility that words might have different cases but should still be anagrams.| Input: Tea vs Eat | Output: "These words are anagrams."|
+| The method checks if the inputs are words. | Input: "yurb" vs "ruby" | Output: "You need to input actual words!" |
+| The method checks if phrases aren't anagrams, then the method should check whether they are actually "antigrams.". | Input: "hi" vs "bye"| Output: "These words have no letter matches and are antigrams."|
+| The program removes all non-characters from a string. | Input: "tea!", "eat." | Output: "tea" vs "eat"|
+| The method will account for multiple words being anagrams or "antigrams.". | Input: "stop, eat, team" | Output: "These words are anagrams." |
+
 
 ## Legal
 
