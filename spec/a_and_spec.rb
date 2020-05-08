@@ -27,3 +27,10 @@ describe("AAA#is_word?") do
     expect(words.is_word?).to(eq("You need to input an actual word"))
   end
 end
+
+describe("AAA#is_antigram?") do
+  it("checks if phrases aren't anagrams, then the method should check whether they are actually 'antigrams.'") do
+    words = AAA.new("hi", "bye")
+    expect(words.is_antigram?).to(eq(true))
+  end
+end

@@ -25,5 +25,8 @@ class AAA
     "You need to input an actual word"
     end
   end
+
+  def is_antigram?
+  end
 end
 
