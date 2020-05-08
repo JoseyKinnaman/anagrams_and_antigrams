@@ -11,13 +11,17 @@ describe("AAA#anagrams") do
     words = AAA.new("Tea","Eat")
     expect(words.anagrams?).to(eq("These words are anagrams."))
   end
+  it("checks and removes all non-alphabetical character") do
+    words = AAA.new("but!!", "tub#$")
+    expect(words.anagrams?).to(eq("but", "tub"))
+  end
    it("checks for the possibility that input may have multiple words but should still be anagrams.") do
-    words = AAA.new("stop, eat, team")
+    words = AAA.new("stop, eat, team", "pots, tea, meat")
     expect(words.anagrams?).to(eq("These words are anagrams."))
   end
 end
 
-describe("AAA#is_word") do 
+describe("AAA#is_word?") do 
   it("checks if inputs are words") do
     words = AAA.new("yurb", "Ruby")
     expect(words.is_word?()).to(eq(true))

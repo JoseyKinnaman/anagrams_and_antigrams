@@ -9,11 +9,9 @@ class AAA
 
    def is_word?
     first_word = @word1
-    binding.pry
     sec_word = @word2
     if first_word.count('aeiouy') >= 1 && sec_word.count('aeiouy') >= 1 
       return true
-      binding.pry
     else 
       return "You need to input an actual word"
     end
@@ -21,6 +19,7 @@ class AAA
 
   def anagrams?
    if (word1.chars.sort == word2.chars.sort) 
+     binding.pry
     "These words are anagrams."
    elsif (word1.chars.sort != word2.chars.sort) 
     "These words are not anagrams"
