@@ -8,7 +8,11 @@ class AAA
   end
 
   def anagrams?
-    word1.chars.sort == word2.chars.sort
-    # puts "These words are anagrams."
+   if (word1.chars.sort == word2.chars.sort) 
+    "These words are anagrams."
+   elsif (word1.chars.sort != word2.chars.sort) 
+    "These words are not anagrams"
+    end
   end
 end
+
