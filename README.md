@@ -28,7 +28,7 @@ _No known bugs at this time_
 
 |Behavior|Input|Output|
 | :-----|:-----|:-----|
-| The method checks if 2 words are anagrams.| Input: tea vs eat | Output: "These words are anagrams."|
+| The method checks if 2 words are anagrams.| Input: "tea" vs "eat" | Output: "These words are anagrams."|
 | The method accounts for the possibility that words might have different cases but should still be anagrams.| Input: Tea vs Eat | Output: "These words are anagrams."|
 | The method checks if the inputs are words. | Input: "yurb" vs "ruby" | Output: "You need to input actual words!" |
 | The method checks if phrases aren't anagrams, then the method should check whether they are actually "antigrams.". | Input: "hi" vs "bye"| Output: "These words have no letter matches and are antigrams."|
