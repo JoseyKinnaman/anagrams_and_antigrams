@@ -29,7 +29,7 @@ describe("AAA#is_word?") do
 end
 
 describe("AAA#is_antigram?") do
-  it("checks if phrases aren't anagrams, then the method should check whether they are actually 'antigrams.'") do
+  it("checks if inputs aren't anagrams, then the method should check whether they are actually 'antigrams.'") do
     words = AAA.new("hi", "bye")
     expect(words.is_antigram?).to(eq(true))
   end
