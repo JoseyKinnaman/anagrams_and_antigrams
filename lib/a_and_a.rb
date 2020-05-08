@@ -17,13 +17,13 @@ class AAA
   end
 
   def is_word?
-    first_word = @word1.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split("")
-    sec_word = @word2.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split("")
-    if first_word.all?{ |word| word.count('aeiouy') >= 1} && sec_word.all?{ |word| word.count('aeiouy') >= 1} 
+    first_word = @word1.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split(" ")
+    sec_word = @word2.downcase.gsub(/[!@#$%^&*()-=_+|;':",.<>?']/, '').split(" ")
+    if first_word.all?{ |str| str.count('aeiouy') >= 1} && sec_word.all?{ |str| str.count('aeiouy') >= 1} 
+      true
     else 
     "You need to input an actual word"
     end
-  binding.pry
   end
 end
 
